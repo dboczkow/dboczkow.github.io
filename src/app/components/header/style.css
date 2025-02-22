@@ -1,0 +1,23 @@
+.header {
+    background-color: rgba(var(--blue), 0.6);
+    backdrop-filter: var(--blur);
+    display: flex;
+    width: 100svw;
+    align-items: center;
+    height: calc(64px + 1rem);
+    position: sticky;
+    padding: 0 1rem 0 1rem;
+    justify-content: space-between;
+}
+
+.header > * {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: row;
+    svg {
+        width: 64px;
+        height: 64px;
+        fill: rgba(var(--text), 0.6);
+    }
+}
