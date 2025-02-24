@@ -1,0 +1,9 @@
+.header {
+    width: 100svw;
+    height: 8rem;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(var(--blue),1);
+}
