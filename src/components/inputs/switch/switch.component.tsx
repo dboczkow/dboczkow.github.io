@@ -3,13 +3,14 @@ import "./switch.style.css"
 interface SwitchProps {
   value?: string
   disabled?: boolean
-  onChange?: (value: string | undefined) => void
+  onChange?: () => void
+  checked?: boolean;
 }
 
-export const Switch = ({value, disabled, onChange}: SwitchProps) => {
+export const Switch = ({value, disabled, onChange, checked}: SwitchProps) => {
   return (
     <label className="switch">
-      <input type={"checkbox"} value={value} disabled={disabled} onChange={() => onChange ? onChange(value) : null}/>
+      <input type={"checkbox"} value={value} disabled={disabled} onChange={onChange} checked={checked}/>
       <span className="slider"></span>
     </label>
   )

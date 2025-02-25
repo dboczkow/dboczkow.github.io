@@ -1,9 +1,27 @@
-.header {
+.header{
     width: 100svw;
     height: 8rem;
-    position: sticky;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     background-color: rgba(var(--blue),1);
+    div {
+        margin: 0 2rem;
+    }
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        color: rgb(var(--base));
+    }
+    .theme-switcher {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
 }
+
+

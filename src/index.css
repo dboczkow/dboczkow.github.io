@@ -28,6 +28,12 @@
   --mantle: 230, 233, 239;
   --crust: 220, 224, 232;
   transition: all 0.25s ease-in-out;
+
+  --primary: var(--blue);
+  --neutral: var(--subtext0);
+  --success: var(--green);
+  --warning: var(--yellow);
+  --danger: var(--red);
 }
 
 [data-theme="dark"] * {
@@ -58,9 +64,7 @@
   --mantle: 24, 24, 37;
   --crust: 17, 17, 27;
   transition: all 0.25s ease-in-out;
-}
 
-:root {
   --primary: var(--blue);
   --neutral: var(--subtext0);
   --success: var(--green);
