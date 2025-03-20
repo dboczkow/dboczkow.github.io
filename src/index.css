@@ -29,7 +29,7 @@
   --crust: 220, 224, 232;
   transition: all 0.25s ease-in-out;
 
-  --primary: var(--blue);
+  --primary: var(--lavender);
   --neutral: var(--subtext0);
   --success: var(--green);
   --warning: var(--yellow);
@@ -65,7 +65,7 @@
   --crust: 17, 17, 27;
   transition: all 0.25s ease-in-out;
 
-  --primary: var(--blue);
+  --primary: var(--lavender);
   --neutral: var(--subtext0);
   --success: var(--green);
   --warning: var(--yellow);
@@ -75,13 +75,24 @@
 #root {
   font-family: "Geist Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
-  width: 100svw;
-  height: 100svh;
+  min-height: 100svh;
   color: rgb(var(--text));
   background-color: rgb(var(--base));
+  font-size: 14px;
 }
 
 body {
   margin: 0;
   padding: 0;
+}
+
+.wip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  line-height: 1.5;
 }

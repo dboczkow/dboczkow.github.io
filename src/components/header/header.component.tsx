@@ -1,9 +1,8 @@
 import './header.style.css';
-import { Switch } from '../inputs/switch/switch.component.tsx';
 import { useLocalStorage } from 'usehooks-ts';
 import { useEffect } from 'react';
-import Logo from '/public/MsAfro12.svg?react'
-import { PiMoonFill, PiSunFill } from 'react-icons/pi';
+import Logo from '/src/assets/MsAfro12.svg?react'
+import {PiMoon, PiSun} from 'react-icons/pi';
 
 export const Header = () => {
 
@@ -23,14 +22,16 @@ export const Header = () => {
 return (
   <div className='header'>
     <div className='logo'>
-      <Logo width={64} height={64} fill="rgb(var(--base))" />
+      <Logo width={64} height={64} fill="rgb(var(--text))" />
       <h1> MsAfro12</h1>
     </div>
   <div className='nav'></div>
     <div className='theme-switcher'>
-      <PiSunFill fill="rgb(var(--yellow))" />
-      <Switch value={userTheme} onChange={() => onChangeTheme()} data-theme-toggle checked={userTheme === 'dark'} />
-      <PiMoonFill fill="rgb(var(--lavender))"/>
+      { userTheme === 'dark' ? (
+          <PiMoon fill="rgb(var(--text))" onClick={onChangeTheme}/>
+      ) : (
+          <PiSun fill="rgb(var(--text))" onClick={onChangeTheme} />
+        )}
     </div>
   </div>
 )

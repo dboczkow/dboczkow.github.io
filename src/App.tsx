@@ -1,14 +1,16 @@
 
 import './App.css'
 import { Header } from './components/header/header.component.tsx';
-import { Footer } from './components/footer/footer.footer.component.tsx';
+import { Footer } from './components/footer/footer.component.tsx';
+import { RouterProvider } from 'react-router/dom';
+import { router } from './utils/router.ts';
 
 function App() {
 
   return (
     <div className="body" >
       <Header/>
-      <h1>Site is under construction 🚧</h1>
+        <RouterProvider router={router}/>
       <Footer/>
     </div>
   )
